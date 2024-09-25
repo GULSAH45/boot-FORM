@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOT-FORMS</title>
+</head>
+
+<body>
+    <form action="https://eoeu7o1do3cpjl4.m.pipedream.net" method="POST">
+
+
+        <div>
+            <label for="first_name">İsim</label>
+            <input type="text" id="first_name" name="first_name" minlength="3" maxlength="20" required>
+        </div>
+        <br>
+        <div>
+            <label for="last_name">Soyisim</label>
+            <input type="text" id="last_name" name="last_name" min="3" max="20" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="tel">Telefon</label>
+            <input type="tel" id="tel" name="tel" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="age">Yaş</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+
+
+        <br>
+        <div>
+            <label for="weight">Kilo</label>
+            <input type="number" id="weight" name="weight" step="0.5" min="30" max="150">
+        </div>
+        <br>
+        <div>
+            <label for="website">Websiteniz</label>
+            <input type="url" id="website" name="website">
+        </div>
+        <br>
+
+        <div>
+            <label for="birthdate">Doğum günü</label>
+            <input type="date" id="birthdate" name="birthdate" max="2009-01-01" min="1954-01-01">
+        </div>
+
+        <br>
+        <div>
+            <label for="favcolor">Favori Renk </label>
+            <input type="color" id="favcolor" name="color">
+        </div>
+
+
+
+        <br>
+        <div>
+            <label for="profilepic">Profil Resmi</label>
+            <input type="file" id="profilepic" name="profilepic" *accept="image/*">
+        </div>
+
+
+        <br>
+        <div>
+            <label for="item">Ne satın almak istiyorsunuz?</label>
+            <input type="search" id="item" list="items" name="items">
+            <datalist id="items">
+                <option value="Kitap">Kitap</option>
+                <option value="Kalem">Kalem</option>
+                <option value="Defter">Defter</option>
+            </datalist>
+        </div>
+
+        <br>
+        <div>
+            <label for="password">Parola</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="password-confirm">Parola Onay</label>
+            <input type="password" id="password-confirm" name="password-confirm" required>
+        </div>
+        <br>
+
+
+
+        <div>
+            <label for="fav-fruit">Favori Meyveniz</label>
+            <select id="fav-fruit" multiple>
+                <option value="apple">Elma</option>
+                <option value="banana">Muz</option>
+                <option value="orange">Portakal</option>
+                <option value="pineapple" selected>Ananas</option>
+                <option value="mango">Mango</option>
+            </select>
+            </label>
+        </div>
+        <br><br>
+
+        <fieldset>
+            <legend>
+                HOBİLERİNİZ
+            </legend>
+            <label for="coding">Kodlama</label>
+            <input type="checkbox" id="coding " checked name="hobbies" value="coding">
+
+            <label for="reading">Okuma</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+
+            <label for="music">Müzik</label>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+
+
+        </fieldset>
+
+
+        <br>
+
+        <fieldset>
+            <legend>
+                Cinsiyetiniz
+            </legend>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Erkek</label>
+            </div>
+
+
+            <div>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Kadın</label>
+            </div>
+
+            <div>
+                <input type="radio" id="unknown" name="gender" value="unknown" required>
+                <label for="unknown">Belirtilmedi</label>
+            </div>
+
+        </fieldset>
+
+
+        <br>
+
+        <div>
+            <label for="w3review">Yorum
+            </label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+
+</textarea>
+
+            <label for="like"></label>
+            <input type="range" id="like" name="like">
+
+
+        </div>
+        <br>
+        <label for="vol">Bizi Puanlayın</label>
+        <input type="range" id="vol" name="vol" min="0" max="100">
+
+        <br>
+        <br>
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+
+    </form>
+
+
+
+</body>
+
+</html>
